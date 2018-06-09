@@ -1,0 +1,16 @@
+{
+    "name": "goooogle-trans",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Google Translationを便利にするツール",
+    "content_scripts": [{
+        "matches": [
+            "https://translate.google.com/*"
+        ],
+        "js": [
+            "jquery.min.js",
+            "script.js"
+        ],
+        "run_at": "document_start"
+    }]
+}
